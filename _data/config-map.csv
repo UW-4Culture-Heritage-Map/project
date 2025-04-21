@@ -1,5 +1,13 @@
 field,display_name,search
-date,Date,true
-creator,Creator,true
-subject,Subjects,true
-location,Location,true
+title,Title,true
+organization_name,Organization,true
+organization_timeline,Organizational Timeline,false
+collection_timespan,Collection Time Span,false
+size,Organization Size,true
+subject,Subject Areas,true
+access_method,Access Method,false
+external_link,External Link,false
+location,Address,true
+latitude,Latitude,false
+longitude,Longitude,false
+
