@@ -9,41 +9,41 @@
 #
 # url is site domain, full URL to the production location of your collection
 # on GitHub Pages follows the pattern username.github.io
-#url: https://collectionbuilder.github.io 
-# baseurl is path to location on the domain if necessary e.g. /digital/hjccc
+#url: https://yourusername.github.io
+# baseurl is path to location on the domain if necessary e.g. /digital/heritage-map
 # on GitHub Pages it is your github repository's name prefixed with a /
-#baseurl: /collectionbuilder-gh 
+#baseurl: /heritage-mapping
 # location of code, the full url to your github repository
-source-code: https://github.com/CollectionBuilder/collectionbuilder-gh
+source-code: https://github.com/yourusername/heritage-mapping
 
 ##########
 # SITE SETTINGS
 #
 # title of site appears in banner
-title: CollectionBuilder-GH 
+title: 4Culture Heritage Mapping Project
 # tagline, a short phrase that will appear throughout the site in the top banner
-tagline: a template for creating simple digital exhibits
+tagline: Mapping Cultural Preservation in King County
 # description appears in meta tags and other locations
 # this description might appear in search result lists, keep around 160 characters max
-description: "CollectionBuilder-GH is a template for creating small digital collection exhibits on GitHub Pages designed for teaching digital library skills"
-# creator of the digital collection, to appear in meta tags; we typically use our GitHub usernames but feel free to just use your name
-author: CollectionBuilder
+description: "A digital public archive visualizing heritage organizations, collections, and living archives throughout King County, Washington."
+# creator of the digital collection, to appear in meta tags
+author: 4Culture and University of Washington
 
 ##########
 # COLLECTION SETTINGS
 #
 # Set the metadata for your collection (the name of the csv file in your _data directory that describes the objects in your collection) 
 # Use the filename of your CSV **without** the ".csv" extension! E.g. _data/demo-metadata.csv --> "demo-metadata"
-metadata: demo-metadata
+metadata: metadata
 
 ##########
 # Site/Organization Branding 
-#   Uncomment these and enter information for your organization (replacing the CDIL links and name below) if you'd like to brand your site with a logo
 #
-# organization-name: "Center for Digital Inquiry and Learning (CDIL)"
-# organization-link: https://cdil.lib.uidaho.edu/
-# organization-logo-banner: https://cdil.lib.uidaho.edu/storying-extinction/assets/img/cdil.png
-# organization-logo-nav: https://cdil.lib.uidaho.edu/assets/img/logo.png
+organization-name: "4Culture Heritage Department"
+organization-link: https://www.4culture.org/
+# You can upload and link a logo here if desired:
+# organization-logo-banner: https://www.4culture.org/wp-content/themes/4culture/assets/images/logo.png
+# organization-logo-nav: https://www.4culture.org/wp-content/themes/4culture/assets/images/logo.png
 
 ##########
 # ROBOTS EXCLUDE
@@ -60,6 +60,4 @@ metadata: demo-metadata
 #
 # ignore stuff
 exclude: [docs/, Rakefile, README.md, LICENSE, CITATION.cff, CODE_OF_CONDUCT.md, CONTRIBUTING.md]
-# compress CSS output
-sass:
-  style: compressed
+
