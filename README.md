@@ -1,71 +1,60 @@
-# CollectionBuilder-GH
+# 4Culture Heritage Mapping Project
 
-A project to generate a free and simple digital collection site using [GitHub Pages](https://pages.github.com/) given:
+This digital collection site was created using [CollectionBuilder-GH](https://collectionbuilder.github.io/collectionbuilder-gh/), a lightweight, open-source template for publishing digital heritage materials via [GitHub Pages](https://pages.github.com/).
 
-- a CSV of collection metadata
-- a folder of JPEG images, PDF documents, MP3s, or links to videos hosted on YouTube or Vimeo
+The site visualizes collections care and heritage stewardship efforts supported by 4Culture across King County. Each mapped record highlights organizations, collections, and individuals who preserve the region’s diverse cultural history, using data drawn from program applications and public archives.
 
-Visit the [demo site](https://collectionbuilder.github.io/collectionbuilder-gh/).
+## How This Project Works
 
-## Build a Digital Collection
+The project is powered by:
 
-Gather your digital objects together and create your metadata using the [CollectionBuilder-GH Metadata Template](https://docs.google.com/spreadsheets/d/1Uv9ytll0hysMOH1j-VL1lZx6PWvc1zf3L35sK_4IuzI/copy) and [metadata docs](https://collectionbuilder.github.io/cb-docs/docs/metadata/gh_metadata/). 
+- A CSV of metadata documenting participating organizations and their collections
+- A folder of JPEG images and PDF files related to each heritage record
+- A GitHub-hosted site structured via Jekyll and the CollectionBuilder-GH template
 
-Then click the green "use this template" button to create your repository, and add your metadata and configure the repository to fit your collection and settings following the [CollectionBuilder Docs](https://collectionbuilder.github.io/cb-docs/). 
+This prototype supports community visibility and exploratory research into King County's living archives, organizations, and collections stewards.
 
-Please feel free to ask questions in the main [CollectionBuilder discussion forum](https://github.com/CollectionBuilder/collectionbuilder.github.io/discussions).
+> **Note:** GitHub Pages is best suited for lightweight, public-facing exhibits. Collections with high-resolution assets or complex access control should use the [CollectionBuilder-CSV](https://github.com/CollectionBuilder/collectionbuilder-csv) template or other infrastructure.
 
-**Note:** 
-Since CollectionBuilder-GH uses [GitHub Pages](https://pages.github.com/), it is only suitable for small collections, with lower resolution images. 
-GitHub repositories are limited to 1GB.
-For larger collections or those that require more customization, check out the [CollectionBuilder-CSV](https://github.com/CollectionBuilder/collectionbuilder-csv) template.
+## Customization & Workflow
 
-## CollectionBuilder-GH Quick Tutorial
+We have customized the following files for this project:
 
-Follow the [CollectionBuilder-GH Walkthrough](https://collectionbuilder.github.io/cb-docs/docs/walkthroughs/gh-walkthrough/) to set up a collection quickly using demo metadata and objects. 
+- `metadata.csv`: Core record data, including organization name, subject area, location, contact, and access methods
+- `config-map.csv`: Controls display of popup content and map behavior
+- `collection-banner.html`: Custom branding for 4Culture, including logos and titles
+- `objects/`: Contains associated media files for mapped organizations
 
-- [Demo Metadata](https://docs.google.com/spreadsheets/d/1x48Te3duPAxh53foEihQVKTfCKUjaCCbH7TrMMd_yU4/copy)
-- [Demo Objects](https://www.lib.uidaho.edu/collectionbuilder/demo-objects.zip)
+## Teaching and Research Value
 
-## Teaching and Learning with CollectionBuilder-GH
+This site demonstrates a minimal computing approach to cultural heritage mapping and is used as part of an academic internship supported by the University of Washington’s iSchool and 4Culture.
 
-CollectionBuilder-GH is intended as a simple template for hands-on teaching about digital libraries.
-It can be used in a workshop setting to take participants through digitization and metadata creation, to having a live collection site hosted on GitHub.
+Skills developed and demonstrated through this project include:
 
-CollectionBuilder-GH aims to be well documented and easy to configure by following the documentation, with the potential to scaffold learning of a multitude of transferable digital and data skills.
-A project in "minimal computing", it provides a depth of learning opportunities, allowing users to take complete ownership over the project and make their work open to the world.
+- Git and GitHub version control
+- Metadata creation using CSV
+- Web publishing with Markdown and HTML
+- Static site generation using [Jekyll](https://jekyllrb.com/)
+- Open data and digital preservation best practices
+- Map-based visualization using [Leaflet](http://leafletjs.com/)
+- "Collections as Data" and minimal computing principles
 
-Learn about:
+## Credits
 
-- Git and GitHub basics
-- [Markdown](https://guides.github.com/features/mastering-markdown/), plaintext writing and content creation
-- HTML, CSS, and JavaScript literacy
-- command line literacy
-- GitHub collaboration and project management
-- [Jekyll](https://jekyllrb.com/) basics
-- working in the Open, open source and open data
-- digital libraries concepts such as "collections as data", minimal computing, data-driven design
+Project supported by:
 
-> We prefer commonly understood formats (such as CSV spreadsheets over YAML), and convention over configuration (follow the example over learn all the options).
+- [4Culture Heritage Department](https://www.4culture.org/)
+- University of Washington, Information School
+- Community-based heritage organizations throughout King County
 
-----------
-
-## CollectionBuilder 
-
-<https://collectionbuilder.github.io/>
-
-CollectionBuilder is a project of University of Idaho Library's [Digital Initiatives](https://www.lib.uidaho.edu/digital/) and the [Center for Digital Inquiry and Learning](https://cdil.lib.uidaho.edu) (CDIL) following the [Lib-Static](https://lib-static.github.io/) methodology. 
-Powered by the open source static site generator [Jekyll](https://jekyllrb.com/) and a modern static web stack, it puts collection metadata to work building beautiful sites.
-
-The basic theme is created using [Bootstrap](https://getbootstrap.com/).
-Metadata visualizations are built using open source libraries such as [DataTables](https://datatables.net/), [Leafletjs](http://leafletjs.com/), [Spotlight gallery](https://github.com/nextapps-de/spotlight), [lazysizes](https://github.com/aFarkas/lazysizes), and [Lunr.js](https://lunrjs.com/).
-Object metadata is exposed using [Schema.org](http://schema.org) and [Open Graph protocol](http://ogp.me/) standards.
-
-Questions can be directed to **collectionbuilder.team@gmail.com**
+Built with [CollectionBuilder](https://collectionbuilder.github.io/) developed by the University of Idaho Library’s [Digital Initiatives](https://www.lib.uidaho.edu/digital/) and [CDIL](https://cdil.lib.uidaho.edu/).
 
 ## License
 
-CollectionBuilder documentation and general web content is licensed [Creative Commons Attribution-ShareAlike 4.0 International](http://creativecommons.org/licenses/by-sa/4.0/). 
-This license does *NOT* include any objects or images used in digital collections, which may have individually applied licenses described by a "rights" field.
-CollectionBuilder code is licensed [MIT](https://github.com/CollectionBuilder/collectionbuilder-csv/blob/master/LICENSE). 
-This license does not include external dependencies included in the `assets/lib` directory, which are covered by their individual licenses.
+This project uses CollectionBuilder’s open source components:
+
+- **Code** is licensed [MIT](https://github.com/CollectionBuilder/collectionbuilder-csv/blob/master/LICENSE)
+- **Documentation** is licensed [Creative Commons BY-SA 4.0](http://creativecommons.org/licenses/by-sa/4.0/)
+
+All media and content in this site are provided by the contributing organizations and may have their own rights statements. Refer to the `rights` field in each metadata entry for usage details.
+
