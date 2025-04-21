@@ -5,16 +5,16 @@
 ##########
 
 ##########
-# URL VARIABLES [optional if using GitHub Pages!]
+# URL VARIABLES [REQUIRED for GitHub Pages with subdirectory!]
 #
 # url is site domain, full URL to the production location of your collection
 # on GitHub Pages follows the pattern username.github.io
-#url: https://yourusername.github.io
+url: https://lzhang56.github.io
 # baseurl is path to location on the domain if necessary e.g. /digital/heritage-map
 # on GitHub Pages it is your github repository's name prefixed with a /
-#baseurl: /heritage-mapping
+baseurl: /4CultureHeritageMappingProject
 # location of code, the full url to your github repository
-source-code: https://github.com/yourusername/heritage-mapping
+source-code: https://github.com/lzhang56/4CultureHeritageMappingProject
 
 ##########
 # SITE SETTINGS
@@ -41,7 +41,7 @@ metadata: metadata
 #
 organization-name: "4Culture Heritage Department"
 organization-link: https://www.4culture.org/
-# You can upload and link a logo here if desired:
+# Uncomment and update with actual image URLs if you want logo banners
 # organization-logo-banner: https://www.4culture.org/wp-content/themes/4culture/assets/images/logo.png
 # organization-logo-nav: https://www.4culture.org/wp-content/themes/4culture/assets/images/logo.png
 
@@ -60,4 +60,3 @@ organization-link: https://www.4culture.org/
 #
 # ignore stuff
 exclude: [docs/, Rakefile, README.md, LICENSE, CITATION.cff, CODE_OF_CONDUCT.md, CONTRIBUTING.md]
-
