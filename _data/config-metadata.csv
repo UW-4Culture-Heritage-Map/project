@@ -1,15 +1,21 @@
 field,display_name,browse_link,external_link
-title,Title,
-creator,Creator,
-date,Date Created,
-description,Description,
-subject,Subjects,true
-location,Location
-latitude,Latitude
-longitude,Longitude
-source,Source
-identifier,Source Identifier,,
-type,Type,
-format,Format,
-rights,Rights,
+title,Title,,
+organization_name,Organization Name,,
+organization_timeline,Organizational Timeline,,
+collection_timespan,Time Span of the Collection,,
+size,Size of the Organization,true,
+description,Description,,
+subject,Subject Areas / Types of Archives,true,
+access_method,Methods of Access,,
+contact,Contact Information,,
+external_link,External Link,,true
+location,Address,,
+latitude,Latitude,,
+longitude,Longitude,,
+creator,Creator,,
+date,Date Founded,,
+type,Type,,
+format,Format,,
+language,Language,,
+rights,Rights,,
 rightsstatement,Rights Statement,,true
