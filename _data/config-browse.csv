@@ -1,5 +1,10 @@
 field,display_name,btn,hidden,sort_name
-date,Date,,,Date
-creator,Creator,,,
-subject,,true
-location,,true
+subject,Subject Areas / Types of Archives,true,false,
+location,Address,true,false,
+organization_name,Organization,false,false,
+organization_timeline,Organizational Timeline,false,false,
+collection_timespan,Collection Time Span,false,false,
+size,Organization Size,false,false,
+date,Date Founded,false,false,Date
+creator,Creator,false,false,
+
