@@ -1,10 +1,7 @@
 field,display_name,btn,hidden,sort_name
-subject,Subject Areas / Types of Archives,true,false,
-location,Address,true,false,
-organization_name,Organization,false,false,
-organization_timeline,Organizational Timeline,false,false,
-collection_timespan,Collection Time Span,false,false,
-size,Organization Size,false,false,
-date,Date Founded,false,false,Date
-creator,Creator,false,false,
-
+subject,Subject,true,false,
+location,Location,true,false,
+organization_name,Organization Name,false,false,
+organization_timeline,Organization Timeline,false,false,
+collection_timespan,Collection Timespan,false,false,
+founding_year,Founding Year,false,false,Date

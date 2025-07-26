@@ -1,13 +1,12 @@
 field,display_name,search
 title,Title,true
-organization_name,Organization,true
-organization_timeline,Organizational Timeline,false
-collection_timespan,Collection Time Span,false
-size,Organization Size,true
-subject,Subject Areas,true
+organization_name,Organization Name,true
+organization_timeline,Organization Timeline,false
+collection_timespan,Collection Timespan,false
+subject,Subject,true
 access_method,Access Method,false
-external_link,External Link,false
-location,Address,true
+digital_presence,Digital Presence,false
+location,Location,true
 latitude,Latitude,false
 longitude,Longitude,false
 
