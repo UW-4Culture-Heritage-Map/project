@@ -1,7 +1,7 @@
 field,display_name,btn,hidden,sort_name
+title,Title,false,false,
 subject,Subject,true,false,
-location,Location,true,false,
-organization_name,Organization Name,false,false,
+location,Location,true,false,Location
 organization_timeline,Organization Timeline,false,false,
 collection_timespan,Collection Timespan,false,false,
 date,Founding Year,false,false,Date
