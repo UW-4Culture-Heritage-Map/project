@@ -11,7 +11,7 @@ latitude,Latitude,,
 longitude,Longitude,,
 digital_presence,Digital Presence,,true
 social_media,Social Media,,
-founding_year,Founding Year,,
+date,Founding Year,,
 type,Type,,
 format,Format,,
 language,Language,,

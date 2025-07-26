@@ -4,4 +4,4 @@ location,Location,true,false,
 organization_name,Organization Name,false,false,
 organization_timeline,Organization Timeline,false,false,
 collection_timespan,Collection Timespan,false,false,
-founding_year,Founding Year,false,false,Date
+date,Founding Year,false,false,Date
