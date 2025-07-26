@@ -47,8 +47,6 @@ function makeCard(obj) {
     if(imgSrc) {
         card += '<a href="' + itemHref + '"> <img class="card-img-top lazyload" data-src="' + imgSrc + '" alt="Image of ' + obj.title + '"></a>';
     }
-    // Display organization name
-    card += '<div class="card-body text-center"> <h3 class="card-title h4"><a href="' + itemHref + '" class="text-dark">' + obj.organization_name + '</a></h3>';
     // title
     //card += '<div class="card-body text-center"> <h3 class="card-title h4"><a href="' + itemHref + '" class="text-dark">' + obj.title + '</a></h3>';
     // thumb for non-photo items
@@ -57,21 +55,37 @@ function makeCard(obj) {
     }
     // other fields
     card += '<p class="card-text">';
+    {% assign firstVisible = true %}
     {% for f in fields %}{% unless f.hidden == 'true' %}
-    if(obj[{{ f.field | jsonify }}]){
-    {% if f.display_name %}card += '<strong>{{ f.display_name }}:</strong> ';{% endif %}
-    {% if f.btn == 'true' %}
-    var btns = obj[{{ f.field | jsonify }}].split(";");
-    for (var i = 0, len = btns.length; i < len; i++) {
-      if(btns[i] != "") {
-        card += '<a class="btn btn-sm btn-secondary m-1 text-wrap" href="{{ page.url | relative_url }}#' + encodeURIComponent(btns[i].trim()) + '">' + btns[i].trim() + '</a>';
-      }
-    }
-    {% else %}
-    card += obj[{{ f.field | jsonify }}];
-    {% endif %}
-    {% unless forloop.last %}card += '<br>';{% endunless %}
-    }
+        if(obj[{{ f.field | jsonify }}]){
+            {% if firstVisible %}
+                {% if f.btn == 'true' %}
+                    var btns = '<div class="card-body text-center"> <h3 class="card-title h4"><a href="' + itemHref + '" class="text-dark">' + obj.organization_name + '</a></h3>';
+                    for (var i = 0, len = btns.length; i < len; i++) {
+                        if(btns[i] != "") {
+                            card += '<a class="btn btn-sm btn-secondary m-1 text-wrap" href="{{ page.url | relative_url }}#' + encodeURIComponent(btns[i].trim()) + '">' + btns[i].trim() + '</a>';
+                        }
+                    }
+                {% else %}
+                    // Display organization name
+                    card += '<div class="card-body text-center"> <h3 class="card-title h4"><a href="' + itemHref + '" class="text-dark">' + obj.organization_name + '</a></h3>';
+                {% endif %}
+                {% assign firstVisible = false %} // only add a line break before the first visible field
+            {% else %} 
+                {% if f.display_name %}card += '<strong>{{ f.display_name }}:</strong> ';{% endif %}
+                {% if f.btn == 'true' %}
+                var btns = obj[{{ f.field | jsonify }}].split(";");
+                for (var i = 0, len = btns.length; i < len; i++) {
+                if(btns[i] != "") {
+                    card += '<a class="btn btn-sm btn-secondary m-1 text-wrap" href="{{ page.url | relative_url }}#' + encodeURIComponent(btns[i].trim()) + '">' + btns[i].trim() + '</a>';
+                }
+                }
+                {% else %}
+                card += obj[{{ f.field | jsonify }}];
+                {% endif %}
+                {% unless forloop.last %}card += '<br>';{% endunless %}
+            {% endif %}
+        }
     {% endunless %}{% endfor %}
     card += '</p>';
     // media type
