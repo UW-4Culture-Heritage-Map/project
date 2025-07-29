@@ -8,7 +8,7 @@
 #
 # featured image is used in home page banner and in meta markup to represent the collection
 # use either an objectid (from an item in this collect), a relative location of an image in this repo (ex. /assets/img/feature.jpg), or a full url to an image elsewhere
-featured-image: demo_008
+featured-image: /objects/demo_008.jpg
 # optional: add extra padding around collection title for a larger image feature. 
 home-title-y-padding: 10em # Default is 8em
 # optional: change position of background image, center, top, bottom
@@ -32,9 +32,9 @@ subjects-stopwords: # boxers;boxing;boxer # set of subjects separated by ;, e.g.
 # MAP PAGE
 #
 # see _data/map-config.csv for field display options
-latitude: 46.727485 #to determine center of map
-longitude: -117.014185 #to determine center of map
-zoom-level: 5 # zoom level for map 
+latitude: 47.6062 #to determine center of map
+longitude: -122.3321 #to determine center of map
+zoom-level: 12 # zoom level for map 
 map-base: Esri_WorldStreetMap # set default base map, choose from: Esri_WorldStreetMap, Esri_NatGeoWorldMap, Esri_WorldImagery, OpenStreetMap_Mapnik
 map-search: true # true/false, not suggested with large collections
 map-search-fuzziness: 0.35 # fuzzy search range from 1 = anything to 0 = exact match only
