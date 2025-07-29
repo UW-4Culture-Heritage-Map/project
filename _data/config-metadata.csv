@@ -12,7 +12,7 @@ longitude,Longitude,,
 digital_presence,Digital Presence,,true
 social_media,Social Media,,
 date,Founding Year,,
-type,Type,,
+type,Type,true,
 format,Format,,
 language,Language,,
 category_tag,Category Tag,,
