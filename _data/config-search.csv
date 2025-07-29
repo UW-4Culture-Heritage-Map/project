@@ -4,3 +4,4 @@ date,true,true
 description,true,true
 subject,true,true
 location,true,false
+type,true,false
