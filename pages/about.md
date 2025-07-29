@@ -40,6 +40,3 @@ This site is built using [CollectionBuilder-GH](https://collectionbuilder.github
 ## Acknowledgments
 
 This mapping project is a collaborative effort between 4Culture staff, interns, and community partners. We thank the many cultural organizations and individuals across King County whose heritage work, commitment, and care have informed this resource.
-
-{% include cb/about_the_about.md %}
-
