@@ -1,6 +1,6 @@
 field,display_name,btn,hidden,sort_name
 organization_name,Organization Name,true,true,Organization Name
-title,Project Title,true,false,
+title,Project Title,true,true,
 subject,Subject,false,false,Subject
 organization_timeline,Organization Timeline,false,false,
 collection_timespan,Collection Timespan,false,false,
