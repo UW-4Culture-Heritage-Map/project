@@ -4,5 +4,5 @@ title,Project Title,true,false,
 subject,Subject,false,false,Subject
 organization_timeline,Organization Timeline,false,false,
 collection_timespan,Collection Timespan,false,false,
-date,Founding Year,false,false,Date
-type,Type,false,true,
+date,Founding Year,false,false,Founding Year
+type,Type,false,false,Type
