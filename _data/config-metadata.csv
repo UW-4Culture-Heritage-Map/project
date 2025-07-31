@@ -10,7 +10,7 @@ location,Location,,
 latitude,Latitude,,
 longitude,Longitude,,
 digital_presence,Digital Presence,,true
-social_media,Social Media,,
+social_media,Social Media,,true
 date,Founding Year,,
 type,Type,true,
 format,Format,,
