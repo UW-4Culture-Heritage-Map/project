@@ -5,7 +5,7 @@ permalink: /about.html
 credits: true
 ---
 
-{% include feature/jumbotron.html objectid="https://cdil.lib.uidaho.edu/images/palouse_sm.jpg" %}
+{% include feature/jumbotron.html %}
 
 {% include feature/nav-menu.html sections="About the Project;Project Goals;Data Sources;Technical Development;Acknowledgments" %}
 
